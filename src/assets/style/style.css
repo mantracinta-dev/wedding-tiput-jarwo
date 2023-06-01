@@ -32,10 +32,11 @@
 }
 
 .wrapper {
-  color: #523c52 !important;
   max-width: 425px;
   margin: auto;
-  background-color: #fcf3ec;
+  background-image: url(../img/dark_exa.webp);
+  background-repeat: repeat;
+  background-position: center;
 }
 
 .font__title {
@@ -102,7 +103,7 @@
 }
 
 .bg-greeting {
-  background-image: url(../img/bg-dark.png);
+  background-image: url(../img/bg-dark.webp);
   background-repeat: repeat;
   background-position: center;
 }
@@ -110,6 +111,14 @@
   background-image: radial-gradient(white, transparent), url(../img/bg-regal.png);
   background-repeat: repeat;
   background-position: center;
+}
+.bg-cover {
+  background-image: linear-gradient(rgba(13, 110, 255, 0), #000000), url(../img/img-1.jpg);
+  background-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: contain;
+  position: relative;
 }
 
 .navbar--top {
@@ -134,4 +143,11 @@
 }
 .navbar .right-bottom {
   transform: rotate(90deg);
+}
+
+.card-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 7rem;
 }/*# sourceMappingURL=style.css.map */

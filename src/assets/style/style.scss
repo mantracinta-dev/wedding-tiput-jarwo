@@ -10,8 +10,8 @@ $color-purple: #7f5d7f;
 $color-dark: #523c52;
 $color-bg: #fcf3ec;
 
-$color-scroll: rgb(182, 100, 114);
-$color-scroll-hover: rgb(243, 102, 125);
+$color-scroll: rgb(236, 216, 153);
+$color-scroll-hover: rgb(222 209 170);
 
 * {
   margin: 0;
@@ -22,10 +22,11 @@ $color-scroll-hover: rgb(243, 102, 125);
 }
 
 .wrapper {
-  color: $color-dark !important;
   max-width: 425px;
   margin: auto;
-  background-color: $color-bg;
+  background-image: url(../img/dark_exa.webp);
+  background-repeat: repeat;
+  background-position: center;
 }
 
 .font {
@@ -98,7 +99,7 @@ $color-scroll-hover: rgb(243, 102, 125);
 
 .bg {
   &-greeting {
-    background-image: url(../img/bg-dark.png);
+    background-image: url(../img/bg-dark.webp);
     background-repeat: repeat;
     background-position: center;
   }
@@ -106,6 +107,13 @@ $color-scroll-hover: rgb(243, 102, 125);
     background-image: radial-gradient(white, transparent), url(../img/bg-regal.png);
     background-repeat: repeat;
     background-position: center;
+  }
+  &-cover {
+    background-image: linear-gradient(#0d6eff00, #000000), url(../img/img-1.jpg);
+    background-position: top;
+    object-fit: cover;
+    background-size: contain;
+    position: relative;
   }
 }
 
@@ -133,5 +141,14 @@ $color-scroll-hover: rgb(243, 102, 125);
   }
   .right-bottom {
     transform: rotate(90deg);
+  }
+}
+
+.card {
+  &-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7rem;
   }
 }

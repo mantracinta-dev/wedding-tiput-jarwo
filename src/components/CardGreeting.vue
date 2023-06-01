@@ -40,10 +40,7 @@ export default {
     // LottieAnimation
   },
   data() {
-    return {
-      man: 'Jarwo',
-      women: ' Tiput'
-    }
+    return {}
   }
 }
 </script>

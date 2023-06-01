@@ -33,15 +33,14 @@ export default {
   methods: {
     getMenu(id) {
       document.getElementById(id).scrollIntoView({
-        behavior: "smooth",
-      });
+        behavior: 'smooth'
+      })
     },
     openMap() {
-      window.open("https://goo.gl/maps/TCVKirdPJLuk4cc59", "_blank");
-    },
-  },
-};
+      window.open('https://goo.gl/maps/hB9KeWNLQFrtHfZD6?coh=178571&entry=tt', '_blank')
+    }
+  }
+}
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

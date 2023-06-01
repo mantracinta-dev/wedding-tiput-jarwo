@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <v-main class="pb-15">
-      <card-greeting :dialog="dialog" :guest="guest" @open="btnOpen" />
+    <v-main class="pb-15 bg-greeting">
+      <!-- <card-greeting :dialog="dialog" :guest="guest" @open="btnOpen" /> -->
       <floating-button :audio="audio" @music="play(audio)" @top="btnTop" />
       <router-view />
     </v-main>
@@ -11,14 +11,14 @@
 
 <script>
 // import Preloader from "../src/components/MyPreloader.vue";
-import CardGreeting from './components/CardGreeting.vue'
+// import CardGreeting from './components/CardGreeting.vue'
 import FloatingButton from './components/FloatingButton.vue'
 
 export default {
   name: 'App',
   components: {
     // Preloader,
-    CardGreeting,
+    // CardGreeting,
     FloatingButton
   },
 
@@ -29,7 +29,7 @@ export default {
     audio: {
       id: 'music-love',
       name: 'kau-ditakdirkan-untukku',
-      file: new Audio(require('/public/youtube-kau-ditakdirkan-untukku.mp3')),
+      file: new Audio(require('/public/Gending-Temanten-Adat-Jawa-kebo-giro.mp3')),
       isPlaying: false
     }
   }),
