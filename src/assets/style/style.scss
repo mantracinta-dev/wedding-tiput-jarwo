@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;900&family=Poppins:wght@100;300;400;500;700;900&family=Sacramento&display=swap");
+@import "scroll";
+
+$font-title-family: "Poppins", sans-serif;
+$font-body-family: "Nunito", sans-serif;
+$font-sambung-family: "Sacramento", cursive;
+
+$color-pink: #ff7baa;
+$color-purple: #7f5d7f;
+$color-dark: #523c52;
+$color-bg: #fcf3ec;
+
+$color-scroll: rgb(182, 100, 114);
+$color-scroll-hover: rgb(243, 102, 125);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: $font-body-family;
+}
+
+.wrapper {
+  color: $color-dark !important;
+  max-width: 425px;
+  margin: auto;
+  background-color: $color-bg;
+}
+
+.font {
+  &__title {
+    font-family: $font-title-family !important;
+    letter-spacing: 1px;
+  }
+  &__subtitle {
+    font-family: $font-body-family !important;
+    letter-spacing: 1px;
+  }
+  &__cursive {
+    font-family: $font-sambung-family !important;
+    letter-spacing: 1px;
+  }
+}
+
+.color {
+  &__pink {
+    color: $color-pink !important;
+    &-bg {
+      background-color: $color-pink !important;
+    }
+  }
+  &__purple {
+    color: $color-purple !important;
+    &-bg {
+      background-color: $color-purple !important;
+    }
+  }
+  &__dark {
+    color: $color-dark !important;
+    &-bg {
+      background-color: $color-dark !important;
+    }
+  }
+}
+
+.btn-floating {
+  position: fixed;
+  margin: auto;
+  bottom: 120px;
+  z-index: 1;
+  &__left {
+    position: fixed;
+    left: 15px;
+  }
+  &__rotate {
+    animation-name: ringing;
+    animation-duration: 10s;
+    animation-delay: 0.5s;
+    transform: rotate(20deg);
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+  &__right {
+    position: fixed;
+    right: 15px;
+  }
+
+  @keyframes ringing {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.bg {
+  &-greeting {
+    background-image: url(../img/bg-dark.png);
+    background-repeat: repeat;
+    background-position: center;
+  }
+  &-card {
+    background-image: radial-gradient(white, transparent), url(../img/bg-regal.png);
+    background-repeat: repeat;
+    background-position: center;
+  }
+}
+
+.navbar {
+  &--top {
+    position: fixed;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  &--bottom {
+    position: fixed;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    bottom: 55px;
+  }
+  .left {
+    transform: rotate(269deg);
+  }
+
+  .left-bottom {
+    transform: rotate(180deg);
+  }
+  .right-bottom {
+    transform: rotate(90deg);
+  }
+}
