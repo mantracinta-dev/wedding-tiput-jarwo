@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main class="pb-15 bg-greeting">
-      <!-- <card-greeting :dialog="dialog" :guest="guest" @open="btnOpen" /> -->
+      <card-greeting :dialog="dialog" :guest="guest" @open="btnOpen" />
       <floating-button :audio="audio" @music="play(audio)" @top="btnTop" />
       <router-view />
     </v-main>
@@ -11,14 +11,14 @@
 
 <script>
 // import Preloader from "../src/components/MyPreloader.vue";
-// import CardGreeting from './components/CardGreeting.vue'
+import CardGreeting from './components/CardGreeting.vue'
 import FloatingButton from './components/FloatingButton.vue'
 
 export default {
   name: 'App',
   components: {
     // Preloader,
-    // CardGreeting,
+    CardGreeting,
     FloatingButton
   },
 
@@ -50,7 +50,7 @@ export default {
     },
     btnOpen() {
       this.dialog = false
-      // this.play(this.audio);
+      this.play(this.audio)
       // sessionStorage.setItem("guest", this.guest);
     },
     play(audio) {
