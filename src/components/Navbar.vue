@@ -4,7 +4,7 @@
       <div class="flex justify-between">
         <div>
           <v-img
-            class="left"
+            class="left z-50"
             lazy-src="../assets/img/lineside.png"
             max-width="30"
             src="../assets/img/lineside.png"

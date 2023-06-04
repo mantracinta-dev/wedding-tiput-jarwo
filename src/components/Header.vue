@@ -6,10 +6,10 @@
           <div class="h-screen bg-cover">
             <div class="card-header" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
               <v-img class="m-auto" lazy-src="../assets/img/ornament.png" max-width="180" src="../assets/img/ornament.png" alt="img-ornament" />
-              <h1 class="font__cursive text-capitalize my-2 lg:text-7xl text-5xl text-white my-5">{{ women }} & {{ man }}</h1>
-              <p class="font-bold text-lg tracking-widest font__title text-white">
+              <h1 class="font__cursive text-capitalize my-2 lg:text-6xl text-5xl text-white my-5">{{ women }} & {{ man }}</h1>
+              <p class="text-sm tracking-widest font__title text-white">
                 Minggu, 12 Juni 2022 <br />
-                Pekanbaru
+                Bandung
               </p>
               <p class="text-white" id="time" />
             </div>

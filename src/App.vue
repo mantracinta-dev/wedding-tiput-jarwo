@@ -54,7 +54,7 @@ export default {
       // sessionStorage.setItem("guest", this.guest);
     },
     play(audio) {
-      audio.isPlaying = !audio.isPlaying
+      // audio.isPlaying = !audio.isPlaying
       if (audio.isPlaying != true) {
         this.pause(audio)
       } else {

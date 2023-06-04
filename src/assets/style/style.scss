@@ -5,8 +5,8 @@ $font-title-family: "Poppins", sans-serif;
 $font-body-family: "Nunito", sans-serif;
 $font-sambung-family: "Sacramento", cursive;
 
-$color-pink: #ff7baa;
-$color-purple: #7f5d7f;
+$color-pink: #d7ae11;
+$color-yellow: #d7ae11;
 $color-dark: #523c52;
 $color-bg: #fcf3ec;
 
@@ -51,10 +51,10 @@ $color-scroll-hover: rgb(222 209 170);
       background-color: $color-pink !important;
     }
   }
-  &__purple {
-    color: $color-purple !important;
+  &__yellow {
+    color: $color-yellow !important;
     &-bg {
-      background-color: $color-purple !important;
+      background-color: $color-yellow !important;
     }
   }
   &__dark {
@@ -115,6 +115,11 @@ $color-scroll-hover: rgb(222 209 170);
     background-size: contain;
     position: relative;
   }
+  &-menu {
+    background-image: url(../img/darth_stripe.png);
+    background-repeat: repeat;
+    background-position: center;
+  }
 }
 
 .navbar {
@@ -124,6 +129,7 @@ $color-scroll-hover: rgb(222 209 170);
     left: 0;
     right: 0;
     top: 0;
+    z-index: 1;
   }
   &--bottom {
     position: fixed;
@@ -131,6 +137,7 @@ $color-scroll-hover: rgb(222 209 170);
     left: 0;
     right: 0;
     bottom: 55px;
+    z-index: 1;
   }
   .left {
     transform: rotate(269deg);
@@ -149,6 +156,6 @@ $color-scroll-hover: rgb(222 209 170);
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 7rem;
+    bottom: 9rem;
   }
 }

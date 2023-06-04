@@ -1,8 +1,8 @@
 <template>
   <div class="fixed bottom-0 right-0 left-0">
-    <v-bottom-navigation>
+    <v-bottom-navigation class="bg-menu" color="amber darken-3">
       <v-btn @click="getMenu('couple')">
-        <span>Pasangan</span>
+        <span class="text-amber">Pasangan</span>
 
         <v-icon>mdi-heart</v-icon>
       </v-btn>

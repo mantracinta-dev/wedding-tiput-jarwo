@@ -6,13 +6,13 @@
       </div>
       <v-card-text class="amber--text text--lighten-1">
         <v-col>
-          <h1 class="font__cursive text-capitalize my-2 lg:text-7xl text-5xl">{{ women }} & {{ man }}</h1>
+          <h1 class="font__cursive text-capitalize my-2 lg:text-7xl md:text-5xl text-4xl">{{ women }} & {{ man }}</h1>
         </v-col>
         <v-divider class="mx-4"></v-divider>
         <v-col class="pt-5">
-          <p class="font__subtitle text-base">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+          <p class="font__subtitle text-xs sm:text-sm">Kepada Yth. Bapak/Ibu/Saudara/i</p>
           <h1 class="font-weight-bold text-capitalize text-lg my-3 tracking-widest">{{ guest ? guest : 'Nama Tamu Undangan' }}<span>*</span></h1>
-          <p class="font-italic font__subtitle mb-0 text-sm" style="font-size: 9px">*Mohon Maaf bila ada kesalahan penulisan nama dan gelar</p>
+          <p class="font-italic font__subtitle mb-0 text-xs sm:text-sm" style="font-size: 9px">*Mohon Maaf bila ada kesalahan penulisan nama dan gelar</p>
         </v-col>
         <v-divider class="mx-4"></v-divider>
         <div class="mt-1">

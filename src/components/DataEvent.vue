@@ -9,7 +9,7 @@
       <div class="absolute left-0 right-0 -top-18 text-center">
         <v-img class="m-auto" lazy-src="../assets/img/linecentral.png" max-width="200" src="../assets/img/linecentral.png" alt="img-line" />
       </div>
-      <p data-aos="zoom-in" data-aos-duration="1500" class="font__title font-bold text-5xl color__purple">09</p>
+      <p data-aos="zoom-in" data-aos-duration="1500" class="font__title font-bold text-5xl color__yellow">09</p>
     </div>
     <p>
       <span class="font__title text-lg font-semibold uppercase"> July 2023 </span>
@@ -17,7 +17,6 @@
       Pukul <b>08:00 Wib</b> s/d Selesai
     </p>
     <div>
-      <v-img class="m-auto" lazy-src="../assets/img/rumah-gadang.png" max-width="100" src="../assets/img/rumah-gadang.png" alt="img-rumah-gadang" />
       <p>
         <span class="font__cursive text-xl color__pink font-semibold">Lokasi Acara</span>
         <br />
