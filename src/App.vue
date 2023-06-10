@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main class="pb-15 bg-greeting">
+    <v-main class="bg-greeting">
       <card-greeting :dialog="dialog" :guest="guest" @open="btnOpen" />
       <floating-button :audio="audio" @music="play(audio)" @top="btnTop" />
       <router-view />
@@ -51,10 +51,10 @@ export default {
     btnOpen() {
       this.dialog = false
       this.play(this.audio)
-      // sessionStorage.setItem("guest", this.guest);
+      sessionStorage.setItem('guest', this.guest)
     },
     play(audio) {
-      // audio.isPlaying = !audio.isPlaying
+      audio.isPlaying = !audio.isPlaying
       if (audio.isPlaying != true) {
         this.pause(audio)
       } else {

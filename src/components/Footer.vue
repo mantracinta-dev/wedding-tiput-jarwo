@@ -1,12 +1,18 @@
 <template>
-  <footer class="text-sm m-auto text-center color__yellow-bg white--text py-2 z-3 relative">
+  <footer class="text-sm m-auto text-center bg-black white--text py-10 z-3 relative">
     Made with love By
-    <a href="https://ourepicday.site/" class="color__pink">@undanganEpic</a>
+    <span @click="goToWeb()" class="cursor-pointer">@undanganEpic</span>
   </footer>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    goToWeb() {
+      window.open('https://www.instagram.com/undanganepic/', '_blank')
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>

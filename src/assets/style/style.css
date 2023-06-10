@@ -74,12 +74,12 @@
 .btn-floating {
   position: fixed;
   margin: auto;
-  bottom: 120px;
+  bottom: 90px;
   z-index: 1;
 }
 .btn-floating__left {
   position: fixed;
-  left: 15px;
+  left: 5px;
 }
 .btn-floating__rotate {
   animation-name: ringing;
@@ -91,7 +91,7 @@
 }
 .btn-floating__right {
   position: fixed;
-  right: 15px;
+  right: 5px;
 }
 @keyframes ringing {
   0% {
@@ -139,7 +139,7 @@
   padding: 5px;
   left: 0;
   right: 0;
-  bottom: 55px;
+  bottom: 0;
   z-index: 1;
 }
 .navbar .left {

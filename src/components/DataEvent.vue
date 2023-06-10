@@ -16,12 +16,12 @@
       <br />
       Pukul <b>08:00 Wib</b> s/d Selesai
     </p>
-    <div>
+    <div class="my-5">
       <p>
         <span class="font__cursive text-xl color__pink font-semibold">Lokasi Acara</span>
         <br />
         <b>The White Clover</b> <br />
-        <span class="text-sm"> Jl. Dr. Cipto No.24, Pasir Kaliki, Kec. Cicendo, Kota Bandung </span>
+        <span class="text-sm break-words"> Jl. Dr. Cipto No.24, Pasir Kaliki, Kec. Cicendo, Kota Bandung </span>
       </p>
       <v-btn x-small color="info" rounded class="py-4" @click="openMap()">
         <v-icon dark small class="mr-1"> mdi-map-marker-outline </v-icon>

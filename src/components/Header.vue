@@ -11,9 +11,16 @@
                 Minggu, 12 Juni 2022 <br />
                 Bandung
               </p>
-              <p class="text-white" id="time" />
+              <div class="text-white" id="time" />
             </div>
           </div>
+        </v-col>
+        <v-col cols="12" class="pb-5 text-white" data-aos="zoom-in" data-aos-duration="1500">
+          <h1 class="font__cursive text-2xl font-semibold mb-2">QS. Ar-Rum Ayat 21</h1>
+          <p class="text-sm break-words">
+            Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di
+            antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+          </p>
         </v-col>
       </v-row>
     </v-container>
@@ -23,27 +30,42 @@
 <script>
 export default {
   mounted() {
-    // Set the date we're counting down to
-    var countDownDate = new Date('Jul 09, 2023 08:00:00').getTime()
+    let countDownDate = new Date('Jul 09, 2023 08:00:00').getTime()
 
-    // Update the count down every 1 second
-    var countdownfunction = setInterval(function () {
-      // Get todays date and time
-      var now = new Date().getTime()
+    let countdownfunction = setInterval(function () {
+      let now = new Date().getTime()
 
-      // Find the distance between now an the count down date
-      var distance = countDownDate - now
+      let distance = countDownDate - now
 
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24))
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+      let days = Math.floor(distance / (1000 * 60 * 60 * 24))
+      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+      let seconds = Math.floor((distance % (1000 * 60)) / 1000)
 
-      // Output the result in an element with id="demo"
-      document.getElementById('time').innerHTML = days + ' Hari ' + hours + ' Jam ' + minutes + ' Min ' + seconds + ' Detik '
+      document.getElementById('time').innerHTML = `
+       <div class="flex items-center justify-items-center justify-center gap-3">
+       <div class="text-center bg-yellow-600 py-2 px-4 rounded">
+        <span>${days}</span> </br>
+        <span class="text-xs capitalize">hari</span>
+       </div>
 
-      // If the count down is over, write some text
+       <div class="text-center bg-yellow-600 py-2 px-4 rounded">
+        <span>${hours}</span> </br>
+        <span class="text-xs capitalize">jam</span>
+       </div>
+
+       <div class="text-center bg-yellow-600 py-2 px-4 rounded">
+        <span>${minutes}</span> </br>
+        <span class="text-xs capitalize">menit</span>
+       </div>
+
+       <div class="text-center bg-yellow-600 py-2 px-4 rounded">
+        <span>${seconds}</span> </br>
+        <span class="text-xs capitalize">detik</span>
+       </div>
+      </div>
+      `
+
       if (distance < 0) {
         clearInterval(countdownfunction)
         document.getElementById('time').innerHTML = 'Sudah Halal'
@@ -53,4 +75,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss"></style>
