@@ -23,7 +23,7 @@
         <b>The White Clover</b> <br />
         <span class="text-sm break-words"> Jl. Dr. Cipto No.24, Pasir Kaliki, Kec. Cicendo, Kota Bandung </span>
       </p>
-      <v-btn x-small color="info" rounded class="py-4" @click="openMap()">
+      <v-btn x-small rounded class="py-4 color__yellow-bg" @click="openMap()">
         <v-icon dark small class="mr-1"> mdi-map-marker-outline </v-icon>
         Lihat Lokasi
       </v-btn>

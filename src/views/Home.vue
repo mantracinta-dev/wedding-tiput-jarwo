@@ -5,6 +5,7 @@
     <DataInfo class="mb-2" />
     <DataEvent class="mb-2" />
     <!-- <DataEvent2 class="mb-2" /> -->
+    <Moment />
     <GalleryPhoto />
     <Gift />
     <Footer />
@@ -22,6 +23,7 @@ import Gift from '../components/Gift.vue'
 import Header from '../components/Header.vue'
 // import Menu from '../components/Menu.vue'
 import Navbar from '../components/Navbar.vue'
+import Moment from '../components/Moment.vue'
 export default {
   name: 'Home',
   components: {
@@ -33,7 +35,8 @@ export default {
     // DataEvent2,
     Gift,
     Footer,
-    GalleryPhoto
+    GalleryPhoto,
+    Moment
   },
   data() {
     return {}

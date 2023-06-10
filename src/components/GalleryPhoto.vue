@@ -10,7 +10,7 @@
     <v-container>
       <v-row>
         <v-col cols="12">
-          <v-img :src="require('../assets/img/img (1).jpg')" aspect-ratio="1" class="grey lighten-2 rounded">
+          <v-img :src="imageSingle" aspect-ratio="1" class="grey lighten-2 rounded">
             <template v-slot:placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
                 <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
@@ -18,8 +18,9 @@
             </template>
           </v-img>
         </v-col>
+
         <v-col v-for="(item, index) in items" :key="index" class="d-flex child-flex" cols="4">
-          <v-img :src="item.src" aspect-ratio="1" class="grey lighten-2 rounded" @click="imageIndex = index">
+          <v-img :src="item.src" aspect-ratio="1" class="grey lighten-2 rounded" @click="chooseImage(item)" @dblclick="imageIndex = index">
             <template v-slot:placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
                 <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
@@ -43,39 +44,45 @@ export default {
   },
   data() {
     return {
+      imageSingle: require('../assets/img/img (1).jpg'),
       items: [
         {
-          title: 'The Weeding of Tiput & Fajar',
+          title: 'The Weeding of Tiput & Fajar | #ForAlifeTIme',
           description: 'Undangan by Undangan Epic',
           src: require('../assets/img/img-1.jpg')
         },
         {
-          title: 'The Weeding of Tiput & Fajar',
+          title: 'The Weeding of Tiput & Fajar | #ForAlifeTIme',
           description: 'Undangan by Undangan Epic',
           src: require('../assets/img/img (1).jpg')
         },
         {
-          title: 'The Weeding of Tiput & Fajar',
+          title: 'The Weeding of Tiput & Fajar | #ForAlifeTIme',
           description: 'Undangan by Undangan Epic',
           src: require('../assets/img/img (1).jpeg')
         },
         {
-          title: 'The Weeding of Tiput & Fajar',
+          title: 'The Weeding of Tiput & Fajar | #ForAlifeTIme',
           description: 'Undangan by Undangan Epic',
           src: require('../assets/img/img (2).jpeg')
         },
         {
-          title: 'The Weeding of Tiput & Fajar',
+          title: 'The Weeding of Tiput & Fajar | #ForAlifeTIme',
           description: 'Undangan by Undangan Epic',
           src: require('../assets/img/img (2).jpg')
         },
         {
-          title: 'The Weeding of Tiput & Fajar',
+          title: 'The Weeding of Tiput & Fajar | #ForAlifeTIme',
           description: 'Undangan by Undangan Epic',
           src: require('../assets/img/img (3).jpeg')
         }
       ],
       imageIndex: null
+    }
+  },
+  methods: {
+    chooseImage(url) {
+      this.imageSingle = url
     }
   }
 }

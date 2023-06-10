@@ -10,7 +10,7 @@
             <v-img class="m-auto" max-height="150" max-width="250" src="../assets/img/bca.png"></v-img>
             <span>a /n {{ card.name }}</span> <br />
             <strong class="text-xl">{{ card.norek }}</strong> <br />
-            <v-btn class="text-capitalize mt-2" @click="copyNumberBank(card.norek)"> <v-icon left dark> mdi mdi-content-copy </v-icon> Copy Bank_name </v-btn>
+            <v-btn class="text-capitalize mt-2 color__yellow-bg" @click="copyNumberBank(card.norek)"> <v-icon left dark> mdi mdi-content-copy </v-icon> Copy No Rek BCA </v-btn>
           </div>
         </div>
       </v-container>
@@ -44,13 +44,13 @@ export default {
         {
           img: '',
           name: 'Tiara Putri Andini Hermanto',
-          norek: 909808
-        },
-        {
-          img: '',
-          name: 'Fajar Prasetyo Adi',
-          norek: 9098087
+          norek: 2210084617
         }
+        // {
+        //   img: '',
+        //   name: 'Fajar Prasetyo Adi',
+        //   norek: 9098087
+        // }
       ],
       alert: false
     }
