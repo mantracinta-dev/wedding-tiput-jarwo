@@ -1,11 +1,11 @@
 <template>
   <div class="text-center m-auto py-2">
-    <div class="bg-card rounded-2xl" data-aos="fade-up" data-aos-duration="1500">
+    <div class="bg-card rounded-2xl">
       <v-container>
         <v-icon x-large color="amber draken-3" class="my-4"> mdi-gift-outline </v-icon>
         <h1 class="font__cursive text-2xl font-semibold color__yellow">Kirim Hadiah</h1>
         <p class="text-sm">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
-        <div class="mb-5">
+        <div class="mb-5" data-aos="fade-up" data-aos-duration="1500">
           <div v-for="(card, index) in data" :key="index" class="ma-auto rounded-lg outline outline-amber-500 pa-5 text-center my-4">
             <v-img class="m-auto" max-height="150" max-width="250" src="../assets/img/bca.png"></v-img>
             <span>a /n {{ card.name }}</span> <br />
