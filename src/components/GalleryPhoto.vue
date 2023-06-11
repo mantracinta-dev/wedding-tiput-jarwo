@@ -44,7 +44,7 @@ export default {
   },
   data() {
     return {
-      imageSingle: require('../assets/img/img (1).jpg'),
+      imageSingle: require('../assets/img/img (3).jpeg'),
       items: [
         {
           title: 'The Weeding of Tiput & Fajar | #ForAlifeTIme',

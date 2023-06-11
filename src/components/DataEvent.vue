@@ -14,7 +14,7 @@
     <p>
       <span class="font__title text-lg font-semibold uppercase"> July 2023 </span>
       <br />
-      Pukul <b>08:00 Wib</b> s/d Selesai
+      Pukul <b>10:00 Wib</b> s/d Selesai
     </p>
     <div class="my-5">
       <p>
@@ -23,7 +23,7 @@
         <b>The White Clover</b> <br />
         <span class="text-sm break-words"> Jl. Dr. Cipto No.24, Pasir Kaliki, Kec. Cicendo, Kota Bandung </span>
       </p>
-      <v-btn x-small rounded class="py-4 color__yellow-bg" @click="openMap()">
+      <v-btn small rounded class="color__yellow-bg text-capitalize" @click="openMap()">
         <v-icon dark small class="mr-1"> mdi-map-marker-outline </v-icon>
         Lihat Lokasi
       </v-btn>
