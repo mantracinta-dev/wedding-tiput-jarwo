@@ -8,7 +8,7 @@
               <v-img class="m-auto" lazy-src="../assets/img/ornament.png" max-width="180" src="../assets/img/ornament.png" alt="img-ornament" />
               <h1 class="font__cursive text-capitalize my-2 lg:text-6xl text-5xl text-white my-5">{{ women }} & {{ man }}</h1>
               <p class="text-sm tracking-widest font__title text-white">
-                Minggu, 09 July 2023 <br />
+                Jumat, 07 July 2023 <br />
                 Bandung
               </p>
               <div class="text-white" id="time" />
@@ -30,7 +30,7 @@
 <script>
 export default {
   mounted() {
-    let countDownDate = new Date('Jul 09, 2023 08:00:00').getTime()
+    let countDownDate = new Date('Jul 07, 2023 10:00:00').getTime()
 
     let countdownfunction = setInterval(function () {
       let now = new Date().getTime()
