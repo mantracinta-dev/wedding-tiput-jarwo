@@ -38,8 +38,8 @@
       </v-container>
     </div>
 
-    <v-dialog v-model="dialog" width="200">
-      <v-card class="text-center py-5"> Berhasil dicopy </v-card>
+    <v-dialog v-model="dialog.show" width="200">
+      <v-card class="text-center py-5"> {{ dialog.msg }} </v-card>
     </v-dialog>
   </div>
 </template>
@@ -50,7 +50,10 @@ export default {
 
   data() {
     return {
-      dialog: false,
+      dialog: {
+        show: false,
+        msg: ''
+      },
       data: [
         {
           img: '',
@@ -68,9 +71,21 @@ export default {
   },
   methods: {
     copyNumberBank(value) {
-      navigator.clipboard.writeText(value).then(() => {
-        this.dialog = !this.dialog
-      })
+      this.dialog.show = true
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        // Clipboard API tersedia
+        navigator.clipboard
+          .writeText(value)
+          .then(() => {
+            this.dialog.msg = 'Berhasil dicopy'
+          })
+          .catch(() => {
+            this.dialog.msg = 'Gagal menyalin teks ke clipboard'
+          })
+      } else {
+        // Clipboard API tidak didukung
+        console.error('Clipboard API tidak didukung oleh browser ini :(')
+      }
     }
   }
 }
